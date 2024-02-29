@@ -39,7 +39,7 @@ table, td, th, ol, li {
 /* Editing the image dimensions
   Remove the width and height attributes from your <img> tag in your HTML.*/
 img.logo {
-    height:200px;
-    width:300px;
+    height:72px;
+    width:267px;
 }
 
