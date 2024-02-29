@@ -1,0 +1,45 @@
+/* Changing the color and size of all paragraphs */
+p {
+    color: darkblue;
+    font-size: 2em;
+}
+
+
+/* Changing the color, size, and font of just my third paragraph */
+p#special-one{
+    color: dodgerblue;
+    font-size: 3em;
+    font-family: Optima
+}
+
+p.big-red{
+    color: darkred;
+    font-size: 4em;
+}
+.brightred{
+    color: firebrick;
+}
+
+
+/* Changing the color, weight, and font of all headers */
+h2 {
+    color: lightblue;
+    font-weight: bold;
+    font-family: Optima;
+}
+
+/* Adding a unique border to all tables */
+table, td, th, ol, li {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0000FF;
+    border-collapse: collapse;
+}
+
+/* Editing the image dimensions
+  Remove the width and height attributes from your <img> tag in your HTML.*/
+img.logo {
+    height:200px;
+    width:300px;
+}
+
