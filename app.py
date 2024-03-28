@@ -29,15 +29,9 @@ def favoritecourse():
 @app.route('/contact', methods=['GET','POST'])
 def contact():
     if request.method == 'POST':
-        print('First name entered:'+request.form.get('first_name'))
-        print('Last name entered:'+request.form.get('last_name'))
-        print('Email entered:'+request.form.get('email'))
-        print('Favorite car entered:'+request.form.get('car'))
-
-    if request.form.get('agree_check'):
-        print('Agree to be contacted entered:' + request.form.get('agree_check'))
-
-    return render_template('contact.html')
+        return render_template('contact.html', form_submitted=True)
+    else:
+        return render_template('contact.html')
 
 
 
