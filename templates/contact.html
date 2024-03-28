@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <div class = "container">
+
+    <h1> Contact Me </h1>
+    {%  if form_submitted %}
+        <div class = "col-12">
+             <h2> Thank you for completing my form!</h2>
+    </div>
+    <div class = "col-md-6">
+        <p> First Name: </p>
+    </div>
+    <div class = "col-md-6">
+        <p>{{ request.form.get('first_name') }}</p>
+    </div>
+    <div class = "col-md-6">
+        <p> Last Name: </p>
+    </div>
+    <div class = "col-md-6">
+        <p>{{ request.form.get('last_name') }}</p>
+    </div>
+    <div class = "col-md-6">
+        <p> Email: </p>
+    </div>
+    <div class = "col-md-6">
+        <p>{{ request.form.get('email') }}</p>
+    </div>
+    <div class = "col-md-6">
+        <p> Favorite Car: </p>
+    </div>
+    <div class = "col-md-6">
+        <p>{{ request.form.get('car') }}</p>
+    </div>
+    <div class = "col-md-6">
+        <p> Agree to Be Contacted: </p>
+    </div>
+    <div class = "col-md-6">
+        <p>{{ 'Yes' if request.form.get('agree_check') else 'No' }}</p>
+    </div>
+    <p><a href = "{{ url_for('contact') }}">Complete form again</a></p>
+    {%  else %}
+
+    </div>
+</body>
+
+</html>
